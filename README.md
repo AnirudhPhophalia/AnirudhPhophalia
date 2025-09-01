@@ -92,8 +92,21 @@
 </p>
 
 
+<h2>🏆 GitHub Trophies</h2>
+<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=AnirudhPhophalia" alt="AnirudhPhophalia" /></a> </p>
 
----
+<!--
+          ## 📊 GitHub Stats
+
+        <p align="center">
+          <img src="https://github-readme-stats.vercel.app/api?username=AnirudhPhophalia&show_icons=true&theme=tokyonight&hide_border=false" width="49%" />
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=AnirudhPhophalia&theme=tokyonight&hide_border=false" width="49%" />
+        </p>
+        <p align="center">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnirudhPhophalia&layout=compact&theme=tokyonight&hide_border=false" width="50%" />
+        </p>
+-->
+
 ## 📬 Contact Me
 
 <p align="center">
