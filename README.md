@@ -93,7 +93,7 @@
 
 
 <h2>🏆 GitHub Trophies</h2>
-<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=AnirudhPhophalia" alt="AnirudhPhophalia" /></a> </p>
+<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=AnirudhPhophalia&title=-Experience,-Reviews" alt="AnirudhPhophalia" /></a> </p>
 
 <!--
           ## 📊 GitHub Stats
