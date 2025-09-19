@@ -79,6 +79,7 @@
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
   <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
   <img src="https://img.shields.io/badge/Seaborn-4B8BBE?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" />
@@ -95,17 +96,16 @@
 <h2>🏆 GitHub Trophies</h2>
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=AnirudhPhophalia&title=-Experience,-Reviews" alt="AnirudhPhophalia" /></a> </p>
 
-<!--
-          ## 📊 GitHub Stats
+## 📊 GitHub Stats
 
-        <p align="center">
-          <img src="https://github-readme-stats.vercel.app/api?username=AnirudhPhophalia&show_icons=true&theme=tokyonight&hide_border=false" width="49%" />
-          <img src="https://github-readme-streak-stats.herokuapp.com/?user=AnirudhPhophalia&theme=tokyonight&hide_border=false" width="49%" />
-        </p>
-        <p align="center">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnirudhPhophalia&layout=compact&theme=tokyonight&hide_border=false" width="50%" />
-        </p>
--->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=AnirudhPhophalia&show_icons=true&theme=tokyonight&hide_border=false" width="49%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnirudhPhophalia&layout=compact&theme=tokyonight&hide_border=false" width="49%" />
+</p>
+
 
 ## 📬 Contact Me
 
