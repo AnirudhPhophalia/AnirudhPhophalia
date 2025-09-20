@@ -1,0 +1,16 @@
+name: Generate Breakout Game from GitHub Contributions
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # runs weekly
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate Breakout Game from GitHub Contribution Graph
+        uses: cyprieng/github-breakout@v1.2.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
