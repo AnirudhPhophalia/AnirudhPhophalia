@@ -105,7 +105,19 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnirudhPhophalia&layout=compact&theme=tokyonight&hide_border=false" width="49%" />
 </p>
+<!--
+## 🕹 GitHub Contribution Breakout
 
+<p align="center">
+  <a href="https://github.com/AnirudhPhophalia/github-breakout" target="_blank">
+    <img src="https://gh-contributions-anirudhphophalia.vercel.app/api?username=AnirudhPhophalia&theme=dark" alt="GitHub Contribution Breakout" width="70%" />
+  </a>
+</p>
+
+<p align="center">
+  Click on the image to play my GitHub Contribution Breakout game! 🎮
+</p>
+-->
 
 ## 📬 Contact Me
 
