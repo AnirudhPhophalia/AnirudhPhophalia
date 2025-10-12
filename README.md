@@ -3,7 +3,11 @@
 </p>
 
 <p align="center">
-  <i>Passionate Coder • Kite Flyer • Math Enthusiast</i>
+  <i>💻 Crafting code by day, 🎏 flying kites by breeze, and 🔢 solving math puzzles by night.</i>
+</p>
+
+<p align="center">
+  “Debug your limits, optimize your time, and let your ideas soar like kites.”
 </p>
 
 ---
