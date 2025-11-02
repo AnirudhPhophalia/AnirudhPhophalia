@@ -33,13 +33,16 @@ jobs:
           echo "After generation:"
           ls -R
 
-      - name: Move generated SVGs
+      - name: Move generated SVG (if exists)
         run: |
           mkdir -p breakout-images
-          mv output/light.svg breakout-images/breakout-light.svg
-          mv output/dark.svg breakout-images/breakout-dark.svg
-          mv output/custom.svg breakout-images/breakout-custom.svg
+          if [ -f output/breakout.svg ]; then
+            mv output/breakout.svg breakout-images/breakout.svg
+          else
+            echo "⚠️ No breakout.svg found. Skipping move."
+          fi
         continue-on-error: true
+
 
       - name: Configure Git
         run: |
