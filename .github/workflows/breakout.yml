@@ -13,4 +13,9 @@ jobs:
       - name: Generate Breakout Game from GitHub Contribution Graph
         uses: cyprieng/github-breakout@v1.2.1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github_username: AnirudhPhophalia
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          enable_ghost_bricks: true
+          paddle_color: '#00FFAA'
+          ball_color: '#FF0000'
+          bricks_colors: '#00FF00,#0000FF,#FF00FF'
