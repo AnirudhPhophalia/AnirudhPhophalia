@@ -2,16 +2,22 @@ name: Generate Breakout Game from GitHub Contributions
 
 on:
   schedule:
-    - cron: '0 0 * * 0' # runs weekly
+    - cron: '0 0 * * 0' # runs weekly (every Sunday midnight)
   workflow_dispatch:
+
+permissions:
+  contents: write  # allow committing files
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Generate Breakout Game from GitHub Contribution Graph
-        uses: cyprien/github-breakout@v1.2.1
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate Breakout Game from GitHub Contributions
+        uses: cyprieng/github-breakout@v1.2.3
         with:
           github_username: AnirudhPhophalia
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -19,3 +25,24 @@ jobs:
           paddle_color: '#00FFAA'
           ball_color: '#FF0000'
           bricks_colors: '#00FF00,#0000FF,#FF00FF'
+          output_path: breakout_output
+
+      - name: Move generated SVGs
+        run: |
+          mkdir -p breakout-images
+          mv breakout_output/light.svg breakout-images/breakout-light.svg
+          mv breakout_output/dark.svg breakout-images/breakout-dark.svg
+          mv breakout_output/custom.svg breakout-images/breakout-custom.svg
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push updated Breakout images
+        run: |
+          git add breakout-images/
+          git commit -m "🕹️ Update Breakout contribution game images" || echo "No changes to commit"
+          git push origin HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
