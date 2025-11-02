@@ -125,8 +125,8 @@
 ## 🕹 GitHub Contribution Breakout
 
 <p align="center">
-  <a href="https://github.com/AnirudhPhophalia/github-breakout" target="_blank">
-    <img src="https://gh-contributions-anirudhphophalia.vercel.app/api?username=AnirudhPhophalia&theme=dark" alt="GitHub Contribution Breakout" width="70%" />
+  <a href="https://cyprieng.github.io/github-breakout/?user=AnirudhPhophalia" target="_blank">
+    <img src="https://raw.githubusercontent.com/AnirudhPhophalia/AnirudhPhophalia/main/breakout-images/breakout.svg" alt="GitHub Contribution Breakout" width="70%" />
   </a>
 </p>
 
