@@ -121,7 +121,7 @@
   </a>
 </p>
 
-
+<!--
 ## 🕹 GitHub Contribution Breakout
 
 <p align="center">
@@ -133,7 +133,7 @@
 <p align="center">
   Click on the image to play my GitHub Contribution Breakout game! 🎮
 </p>
-
+-->
 
 ## 📬 Contact Me
 
