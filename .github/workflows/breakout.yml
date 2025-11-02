@@ -2,7 +2,7 @@ name: Generate Breakout Game from GitHub Contributions
 
 on:
   schedule:
-    - cron: '0 0 * * 0'  # every Sunday midnight
+    - cron: '0 0 * * 0' # weekly
   workflow_dispatch:
 
 permissions:
@@ -17,6 +17,9 @@ jobs:
 
       - name: Generate Breakout Game
         uses: cyprieng/github-breakout@v1.2.3
+        env:
+          GITHUB_USERNAME: AnirudhPhophalia
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           github_username: AnirudhPhophalia
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -25,12 +28,18 @@ jobs:
           ball_color: '#FF0000'
           bricks_colors: '#00FF00,#0000FF,#FF00FF'
 
+      - name: Debug - List all generated files
+        run: |
+          echo "After generation:"
+          ls -R
+
       - name: Move generated SVGs
         run: |
           mkdir -p breakout-images
           mv output/light.svg breakout-images/breakout-light.svg
           mv output/dark.svg breakout-images/breakout-dark.svg
           mv output/custom.svg breakout-images/breakout-custom.svg
+        continue-on-error: true
 
       - name: Configure Git
         run: |
