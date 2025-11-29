@@ -39,7 +39,7 @@
 
 ## 🌟 Featured Projects
 
-<table>
+<table >
   <tr>
     <td width="50%" valign="top">
       <h4>🧠 <a href="https://github.com/AnirudhPhophalia/MAD-1" target="_blank">MAD1 Quiz Master</a></h4>
@@ -48,6 +48,15 @@
         Includes time-bound rounds, scoring, and interactive UI.
       </p>
     </td>
+    <td width="50%" valign="top">
+      <h4>🏥 <a href="https://github.com/AnirudhPhophalia/MAD-II-HMS" target="_blank">Hospital Management System</a></h4>
+      <p>
+        The system is designed to be efficient, user-friendly, auditable, and scalable for small to medium hospital workflows. 
+        Build with Vue.js and Flask.
+      </p>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h4>📷 <a href="https://github.com/AnirudhPhophalia/QR-code-generator-using-angular" target="_blank">QR Code Generator</a></h4>
       <p>
