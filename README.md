@@ -28,8 +28,8 @@
 
 ### 🎯 What I'm Currently Building
 
-- 🤖 **AI/ML/NLP** – Building intelligent models using TensorFlow, Scikit-learn, and NLP libraries  
-- 🧠 **DSA with Python** – Practicing data structures & algorithms through challenges  
+- 🤖 **AI/ML/NLP** – Building intelligent models using Pytorch, Scikit-learn, and NLP libraries  
+- 🧠 **DSA with Python and Cpp** – Practicing data structures & algorithms through challenges  
 - 🎮 **JavaScript Logic Games** – Games like the Quantum Entanglement Puzzle  
 - 🧩 **Frontend** – AngularJS, TailwindCSS, Bootstrap for responsive UI  
 - ⚙️ **Backend** – REST APIs with Node.js, NestJS, Flask  
@@ -42,12 +42,20 @@
 <table >
   <tr>
     <td width="50%" valign="top">
+      <h4>⛵ <a href="https://github.com/VAK-Former/VAK-Former" target="_blank">USV-Segmentation</a></h4>
+      <p>
+        A semantic segmentation framework built on top of MMSegmentation using LARS maritime dataset, designed specifically for Unmanned Surface Vehicle (USV) perception in maritime environments.
+      </p>
+    </td>
+    <td width="50%" valign="top">
       <h4>🧠 <a href="https://github.com/AnirudhPhophalia/MAD-1" target="_blank">MAD1 Quiz Master</a></h4>
       <p>
         A responsive and interactive quiz website designed for educational quizzes. 
         Includes time-bound rounds, scoring, and interactive UI.
       </p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h4>🏥 <a href="https://github.com/AnirudhPhophalia/MAD-II-HMS" target="_blank">Hospital Management System</a></h4>
       <p>
@@ -55,8 +63,6 @@
         Build with Vue.js and Flask.
       </p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h4>📷 <a href="https://github.com/AnirudhPhophalia/QR-code-generator-using-angular" target="_blank">QR Code Generator</a></h4>
       <p>
@@ -108,10 +114,10 @@
   <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </p>
 
-
+<!--
 <h2>🏆 GitHub Trophies</h2>
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=AnirudhPhophalia&title=-Experience,-Reviews" alt="AnirudhPhophalia" /></a> </p>
-
+-->
 ## 📊 GitHub Stats
 
 <p align="center">
