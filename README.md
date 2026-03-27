@@ -114,10 +114,10 @@
   <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </p>
 
-<!--
+
 <h2>🏆 GitHub Trophies</h2>
-<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=AnirudhPhophalia&title=-Experience,-Reviews" alt="AnirudhPhophalia" /></a> </p>
--->
+<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="[![trophy](https://github-profile-trophy.vercel.app/?username=AnirudhPhophalia&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)" /></a> </p>
+
 ## 📊 GitHub Stats
 
 <p align="center">
