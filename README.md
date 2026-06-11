@@ -53,20 +53,20 @@
         A semantic segmentation framework built on top of MMSegmentation using LARS maritime dataset, designed specifically for Unmanned Surface Vehicle (USV) perception in maritime environments.
       </p>
     </td>
-    <td width="50%" valign="top">
-      <h4>🧠 <a href="https://github.com/AnirudhPhophalia/MAD-1" target="_blank">MAD1 Quiz Master</a></h4>
+	<td width="50%" valign="top">
+      <h4>🧾 <a href="https://github.com/AnirudhPhophalia/InvoiceSnap" target="_blank">InvoiceSnap</a></h4>
       <p>
-        A responsive and interactive quiz website designed for educational quizzes. 
-        Includes time-bound rounds, scoring, and interactive UI.
+        An AI-powered invoice processing and management platform that automates invoice extraction, validation, categorization, and analytics.
+        Built using modern web technologies with a focus on productivity and business automation.
       </p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>🧾 <a href="https://github.com/AnirudhPhophalia/InvoiceSnap" target="_blank">InvoiceSnap</a></h4>
+      <h4>🧠 <a href="https://github.com/AnirudhPhophalia/MAD-1" target="_blank">MAD1 Quiz Master</a></h4>
       <p>
-        An AI-powered invoice processing and management platform that automates invoice extraction, validation, categorization, and analytics.
-        Built using modern web technologies with a focus on productivity and business automation.
+        A responsive and interactive quiz website designed for educational quizzes. 
+        Includes time-bound rounds, scoring, and interactive UI.
       </p>
     </td>
     <td width="50%" valign="top">
@@ -195,5 +195,5 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=AnirudhPhophalia&label=Profile+Views&color=blueviolet&style=for-the-badge" alt="Profile Views Badge" />
-	<img src="https://img.shields.io/github/followers/AnirudhPhophalia?label=Followers&color=blueviolet&style=for-the-badge" alt="Followers" />
+	<img src="https://img.shields.io/github/followers/AnirudhPhophalia?label=Followers&color=skyblue&style=for-the-badge" alt="Followers" />
 </p>
