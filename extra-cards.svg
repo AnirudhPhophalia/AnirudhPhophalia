@@ -1,44 +1,89 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" width="850" height="663" viewBox="0 0 850 663">
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="810" viewBox="0 0 850 810">
   <defs>
-    <style>
-      .text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-      .header { font-size: 20px; font-weight: 600; fill: #0550ae; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-      .subheader { font-size: 16px; font-weight: 600; fill: #24292f; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-      .body { font-size: 13px; fill: #57606a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-      .title { font-size: 14px; font-weight: 600; fill: #0969da; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-      .box { fill: #ffffff; stroke: #d0d7de; stroke-width: 1px; rx: 6px; ry: 6px; }
-      .outerbox { fill: #ffffff; stroke: #d0d7de; stroke-width: 1.5px; rx: 12px; ry: 12px; }
+    <style type="text/css">
+      <![CDATA[
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        .text { font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+        .header { font-size: 20px; font-weight: 600; fill: #0550ae; font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; letter-spacing: 0.5px; }
+        .subheader { font-size: 16px; font-weight: 600; fill: #24292f; font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; letter-spacing: 0.3px; }
+        .body { font-size: 13px; fill: #57606a; font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+        .title { font-size: 14px; font-weight: 600; fill: #0550ae; font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+        .box { fill: #ffffff; stroke: #e4e2e2; stroke-width: 1px; rx: 6px; ry: 6px; }
+      ]]>
     </style>
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0550ae" />
+      <stop offset="50%" style="stop-color:#1a7f37" />
+      <stop offset="100%" style="stop-color:#0550ae" />
+    </linearGradient>
   </defs>
 
-  <rect class="outerbox" x="1" y="1" width="848" height="661" />
+  <!-- BACKGROUND RECTANGLE -->
+  <rect x="0" y="0" width="850" height="810" rx="16" fill="#f6f8fa" />
+  <rect x="1" y="1" width="848" height="808" rx="15" fill="none" stroke="url(#borderGradient)" stroke-width="2" />
 
   <!-- TECH STACK -->
   <g transform="translate(30, 30)">
     <text class="header" x="0" y="20">Tech Stack</text>
-    <path d="M0,35 L790,35" stroke="#d0d7de" stroke-width="1" />
-    
     <g transform="translate(0, 60)">
-      <circle cx="10" cy="0" r="5" fill="#e34c26" /><text class="body" x="25" y="4">HTML5/CSS3</text>
-      <circle cx="120" cy="0" r="5" fill="#f1e05a" /><text class="body" x="135" y="4">JavaScript</text>
-      <circle cx="230" cy="0" r="5" fill="#3178c6" /><text class="body" x="245" y="4">TypeScript</text>
-      <circle cx="340" cy="0" r="5" fill="#3572A5" /><text class="body" x="355" y="4">Python</text>
-      <circle cx="450" cy="0" r="5" fill="#b07219" /><text class="body" x="465" y="4">Java</text>
-      
-      <circle cx="10" cy="30" r="5" fill="#41b883" /><text class="body" x="25" y="34">Vue/React/Angular</text>
-      <circle cx="160" cy="30" r="5" fill="#000000" /><text class="body" x="175" y="34">Node/Express/Nest</text>
-      <circle cx="310" cy="30" r="5" fill="#dd0031" /><text class="body" x="325" y="34">PyTorch/TF/ML</text>
-      <circle cx="450" cy="30" r="5" fill="#339933" /><text class="body" x="465" y="34">PostgreSQL/Mongo</text>
+      <circle cx="10" cy="-4" r="5" fill="#3776AB" /><text class="body" x="22" y="0">Python</text>
+<circle cx="168" cy="-4" r="5" fill="#00599C" /><text class="body" x="180" y="0">C</text>
+<circle cx="326" cy="-4" r="5" fill="#00599C" /><text class="body" x="338" y="0">C++</text>
+<circle cx="484" cy="-4" r="5" fill="#ED8B00" /><text class="body" x="496" y="0">Java</text>
+<circle cx="642" cy="-4" r="5" fill="#F7DF1E" /><text class="body" x="654" y="0">JavaScript</text>
+<circle cx="10" cy="21" r="5" fill="#3178C6" /><text class="body" x="22" y="25">TypeScript</text>
+<circle cx="168" cy="21" r="5" fill="#276DC3" /><text class="body" x="180" y="25">R</text>
+<circle cx="326" cy="21" r="5" fill="#FF6F00" /><text class="body" x="338" y="25">MATLAB</text>
+<circle cx="484" cy="21" r="5" fill="#339933" /><text class="body" x="496" y="25">Node.js</text>
+<circle cx="642" cy="21" r="5" fill="#000000" /><text class="body" x="654" y="25">Express.js</text>
+<circle cx="10" cy="46" r="5" fill="#E0234E" /><text class="body" x="22" y="50">NestJS</text>
+<circle cx="168" cy="46" r="5" fill="#000000" /><text class="body" x="180" y="50">Flask</text>
+<circle cx="326" cy="46" r="5" fill="#37814A" /><text class="body" x="338" y="50">Celery</text>
+<circle cx="484" cy="46" r="5" fill="#DD0031" /><text class="body" x="496" y="50">Angular</text>
+<circle cx="642" cy="46" r="5" fill="#20232a" /><text class="body" x="654" y="50">React</text>
+<circle cx="10" cy="71" r="5" fill="#4FC08D" /><text class="body" x="22" y="75">Vue.js</text>
+<circle cx="168" cy="71" r="5" fill="#E34F26" /><text class="body" x="180" y="75">HTML5</text>
+<circle cx="326" cy="71" r="5" fill="#1572B6" /><text class="body" x="338" y="75">CSS3</text>
+<circle cx="484" cy="71" r="5" fill="#7952B3" /><text class="body" x="496" y="75">Bootstrap</text>
+<circle cx="642" cy="71" r="5" fill="#38B2AC" /><text class="body" x="654" y="75">TailwindCSS</text>
+<circle cx="10" cy="96" r="5" fill="#85EA2D" /><text class="body" x="22" y="100">Swagger</text>
+<circle cx="168" cy="96" r="5" fill="#150458" /><text class="body" x="180" y="100">Pandas</text>
+<circle cx="326" cy="96" r="5" fill="#013243" /><text class="body" x="338" y="100">NumPy</text>
+<circle cx="484" cy="96" r="5" fill="#11557C" /><text class="body" x="496" y="100">Matplotlib</text>
+<circle cx="642" cy="96" r="5" fill="#4B8BBE" /><text class="body" x="654" y="100">Seaborn</text>
+<circle cx="10" cy="121" r="5" fill="#F7931E" /><text class="body" x="22" y="125">Scikit-Learn</text>
+<circle cx="168" cy="121" r="5" fill="#FF6F00" /><text class="body" x="180" y="125">TensorFlow</text>
+<circle cx="326" cy="121" r="5" fill="#EE4C2C" /><text class="body" x="338" y="125">PyTorch</text>
+<circle cx="484" cy="121" r="5" fill="#5C3EE8" /><text class="body" x="496" y="125">OpenCV</text>
+<circle cx="642" cy="121" r="5" fill="#FFD21E" /><text class="body" x="654" y="125">Hugging Face</text>
+<circle cx="10" cy="146" r="5" fill="#44A833" /><text class="body" x="22" y="150">Anaconda</text>
+<circle cx="168" cy="146" r="5" fill="#4169E1" /><text class="body" x="180" y="150">PostgreSQL</text>
+<circle cx="326" cy="146" r="5" fill="#47A248" /><text class="body" x="338" y="150">MongoDB</text>
+<circle cx="484" cy="146" r="5" fill="#4479A1" /><text class="body" x="496" y="150">MySQL</text>
+<circle cx="642" cy="146" r="5" fill="#003B57" /><text class="body" x="654" y="150">SQLite</text>
+<circle cx="10" cy="171" r="5" fill="#DC382D" /><text class="body" x="22" y="175">Redis</text>
+<circle cx="168" cy="171" r="5" fill="#232F3E" /><text class="body" x="180" y="175">AWS</text>
+<circle cx="326" cy="171" r="5" fill="#0db7ed" /><text class="body" x="338" y="175">Docker</text>
+<circle cx="484" cy="171" r="5" fill="#000000" /><text class="body" x="496" y="175">Vercel</text>
+<circle cx="642" cy="171" r="5" fill="#3448C5" /><text class="body" x="654" y="175">Cloudinary</text>
+<circle cx="10" cy="196" r="5" fill="#FCC624" /><text class="body" x="22" y="200">Linux</text>
+<circle cx="168" cy="196" r="5" fill="#557C94" /><text class="body" x="180" y="200">Kali Linux</text>
+<circle cx="326" cy="196" r="5" fill="#FF6C37" /><text class="body" x="338" y="200">Postman</text>
+<circle cx="484" cy="196" r="5" fill="#F05032" /><text class="body" x="496" y="200">Git</text>
+<circle cx="642" cy="196" r="5" fill="#181717" /><text class="body" x="654" y="200">GitHub</text>
+<circle cx="10" cy="221" r="5" fill="#0052CC" /><text class="body" x="22" y="225">Bitbucket</text>
+<circle cx="168" cy="221" r="5" fill="#0052CC" /><text class="body" x="180" y="225">Jira</text>
+
     </g>
   </g>
 
   <!-- FEATURED PROJECTS -->
-  <g transform="translate(30, 170)">
+  <g transform="translate(30, 380)">
     <text class="header" x="0" y="20">Featured Projects</text>
-    <path d="M0,35 L790,35" stroke="#d0d7de" stroke-width="1" />
     
-    <g transform="translate(0, 50)">
+    <g transform="translate(0, 40)">
       <!-- Project 1 -->
       <rect class="box" x="0" y="0" width="385" height="100" />
       <text class="title" x="15" y="25">⛵ USV-Segmentation</text>
@@ -54,37 +99,37 @@
       <text class="body" x="420" y="75">analytics.</text>
 
       <!-- Project 3 -->
-      <rect class="box" x="0" y="120" width="385" height="100" />
-      <text class="title" x="15" y="145">🧠 MAD1 Quiz Master</text>
-      <text class="body" x="15" y="165">Interactive quiz platform with time-bound</text>
-      <text class="body" x="15" y="180">rounds, scoring, and an interactive UI.</text>
+      <rect class="box" x="0" y="115" width="385" height="100" />
+      <text class="title" x="15" y="140">🧠 MAD1 Quiz Master</text>
+      <text class="body" x="15" y="160">Interactive quiz platform with time-bound</text>
+      <text class="body" x="15" y="175">rounds, scoring, and an interactive UI.</text>
 
       <!-- Project 4 -->
-      <rect class="box" x="405" y="120" width="385" height="100" />
-      <text class="title" x="420" y="145">📷 QR Code Generator</text>
-      <text class="body" x="420" y="165">Real-time QR code generator supporting</text>
-      <text class="body" x="420" y="180">logos and camera input.</text>
+      <rect class="box" x="405" y="115" width="385" height="100" />
+      <text class="title" x="420" y="140">📷 QR Code Generator</text>
+      <text class="body" x="420" y="160">Real-time QR code generator supporting</text>
+      <text class="body" x="420" y="175">logos and camera input.</text>
     </g>
   </g>
 
   <!-- CONTACT & VISITOR COUNT -->
-  <g transform="translate(30, 480)">
+  <g transform="translate(30, 680)">
     <text class="header" x="0" y="20">Contact Me</text>
-    <path d="M0,35 L790,35" stroke="#d0d7de" stroke-width="1" />
     
-    <g transform="translate(0, 60)">
+    <g transform="translate(0, 50)">
       <text class="subheader" x="0" y="10">📧 anirudhphophalia@gmail.com</text>
-      <text class="subheader" x="0" y="40">💼 linkedin.com/in/anirudh-phophalia</text>
-      <text class="subheader" x="0" y="70">💬 Discord: anirudhphophalia</text>
+      <text class="subheader" x="0" y="35">💼 linkedin.com/in/anirudh-phophalia</text>
+      <text class="subheader" x="0" y="60">💬 Discord: anirudhphophalia</text>
     </g>
   </g>
 
-  <g transform="translate(455, 480)">
+  <g transform="translate(455, 680)">
     <text class="header" x="0" y="20">Visitor Count</text>
-    <path d="M0,35 L365,35" stroke="#d0d7de" stroke-width="1" />
-    <g transform="translate(0, 60)">
-      <text class="body" x="0" y="10">Currently viewing profile dynamic stats.</text>
-      <text class="body" x="0" y="30">Thank you for visiting!</text>
+    <g transform="translate(0, 50)">
+      <rect rx="6" ry="6" x="0" y="-12" width="100" height="28" fill="#0969da" />
+      <text class="subheader" x="10" y="7" fill="#ffffff" font-size="13px">Profile Views</text>
+      <rect rx="6" ry="6" x="100" y="-12" width="80" height="28" fill="#57606a" />
+      <text class="subheader" x="110" y="7" fill="#ffffff" font-size="13px">3,031</text>
     </g>
   </g>
   
