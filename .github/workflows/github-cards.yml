@@ -375,6 +375,6 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "Update GitHub profile cards"
-            git pull --rebase
+            git pull --rebase --autostash
             git push
           fi
