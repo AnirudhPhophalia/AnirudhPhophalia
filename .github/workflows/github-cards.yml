@@ -253,16 +253,17 @@ jobs:
             // Modify insights.svg to add padding and remove Joined GitHub
             let insightsSvg = fs.readFileSync("insights.svg", "utf8");
             
-            // Remove the Joined GitHub line
+            // Hide the Joined GitHub line safely
             const target = 'Joined GitHub';
             const idx = insightsSvg.indexOf(target);
             if (idx !== -1) {
-                const startG = insightsSvg.lastIndexOf('<g', idx);
-                const parentG = insightsSvg.lastIndexOf('<g', startG - 1);
-                const firstClose = insightsSvg.indexOf('</g>', idx);
-                const secondClose = insightsSvg.indexOf('</g>', firstClose + 1);
-                if (parentG !== -1 && secondClose !== -1) {
-                    insightsSvg = insightsSvg.slice(0, parentG) + insightsSvg.slice(secondClose + 4);
+                const textTagIdx = insightsSvg.lastIndexOf('<text', idx);
+                if (textTagIdx !== -1) {
+                    insightsSvg = insightsSvg.slice(0, textTagIdx) + '<text display="none"' + insightsSvg.slice(textTagIdx + 5);
+                }
+                const gBefore = insightsSvg.lastIndexOf('<g', textTagIdx);
+                if (gBefore !== -1) {
+                    insightsSvg = insightsSvg.slice(0, gBefore) + '<g display="none"' + insightsSvg.slice(gBefore + 2);
                 }
             }
 
