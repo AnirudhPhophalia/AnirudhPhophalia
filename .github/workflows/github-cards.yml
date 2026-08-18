@@ -246,29 +246,50 @@ jobs:
         run: |
           node <<'EOF'
 
+          const fs = require("fs");
           const sharp = require("sharp");
 
           async function main() {
+            // Modify insights.svg to add padding and remove Joined GitHub
+            let insightsSvg = fs.readFileSync("insights.svg", "utf8");
+            
+            // Remove the Joined GitHub line
+            const target = 'Joined GitHub';
+            const idx = insightsSvg.indexOf(target);
+            if (idx !== -1) {
+                const startG = insightsSvg.lastIndexOf('<g', idx);
+                const parentG = insightsSvg.lastIndexOf('<g', startG - 1);
+                const firstClose = insightsSvg.indexOf('</g>', idx);
+                const secondClose = insightsSvg.indexOf('</g>', firstClose + 1);
+                if (parentG !== -1 && secondClose !== -1) {
+                    insightsSvg = insightsSvg.slice(0, parentG) + insightsSvg.slice(secondClose + 4);
+                }
+            }
+
+            // Increase SVG height by 30 for padding
+            insightsSvg = insightsSvg.replace(/<svg[^>]*width="(\d+)"[^>]*height="(\d+)"[^>]*viewBox="0 0 (\d+) (\d+)"[^>]*>/, (match, w, h, vw, vh) => {
+              return match.replace(/height="\d+"/, `height="${parseInt(h) + 30}"`).replace(/viewBox="0 0 \d+ \d+"/, `viewBox="0 0 ${vw} ${parseInt(vh) + 30}"`);
+            });
+
+            // Shift internal contents down by 30
+            insightsSvg = insightsSvg.replace(/<g data-testid="card-title" transform="translate\((\d+),\s*(\d+)\)">/, (match, x, y) => {
+              return `<g data-testid="card-title" transform="translate(${x}, ${parseInt(y) + 30})">`;
+            });
+            insightsSvg = insightsSvg.replace(/<g data-testid="main-card-body" transform="translate\((\d+),\s*(\d+)\)">/, (match, x, y) => {
+              return `<g data-testid="main-card-body" transform="translate(${x}, ${parseInt(y) + 30})">`;
+            });
+
+            fs.writeFileSync("insights.svg", insightsSvg);
 
             // ======================================================
             // SETTINGS
             // ======================================================
 
-            // High-resolution rendering.
             const SCALE = 3;
-
-
-            // Final displayed size of the rank badge.
-            //
-            // 80 = approximately the size you were asking for.
-            //
             const RANK_SIZE = 80;
 
-
-            // Position on the Insights card.
             const RANK_LEFT = 30;
-            const RANK_TOP = 30;
-
+            const RANK_TOP = 60; // 30 + 30px padding
 
             // ======================================================
             // RENDER RANK SVG
@@ -286,7 +307,6 @@ jobs:
               })
               .toBuffer();
 
-
             // ======================================================
             // RENDER INSIGHTS SVG
             // ======================================================
@@ -298,7 +318,6 @@ jobs:
                 compressionLevel: 9
               })
               .toBuffer();
-
 
             // ======================================================
             // PLACE RANK ON TOP OF INSIGHTS
@@ -317,56 +336,44 @@ jobs:
               })
               .toFile("github-cards.png");
 
-
-            // ======================================================
-            // PRINT RESULT
-            // ======================================================
-
-            const metadata =
-              await sharp("github-cards.png").metadata();
-
-            console.log(
-              `Created github-cards.png: ${metadata.width}x${metadata.height}`
-            );
-
+            console.log("Created github-cards.png");
           }
 
           main().catch(error => {
             console.error(error);
             process.exit(1);
           });
-
           EOF
 
+      # ============================================================
+      # 7. GENERATE EXTRA CARDS
+      # ============================================================
+
+      - name: Run Extra Cards Generator
+        run: |
+          node generate-extra-cards.js
+          node <<'EOF'
+          const sharp = require("sharp");
+          sharp("extra-cards.svg", { density: 300 })
+            .png({ compressionLevel: 9 })
+            .toFile("extra-cards.png")
+            .then(() => console.log("Created extra-cards.png"))
+            .catch(err => console.error(err));
+          EOF
 
       # ============================================================
-      # 7. COMMIT IMAGE
+      # 8. COMMIT IMAGE
       # ============================================================
-
-      - name: Run Profile Generator
-        run: python generate_profile.py
 
       - name: Commit updated card
         run: |
-
           git config user.name "github-actions[bot]"
-
-          git config user.email \
-            "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add github-cards.png dark.svg light.svg
-
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add github-cards.png extra-cards.png
           if git diff --cached --quiet; then
-
             echo "No changes to commit."
-
           else
-
             git commit -m "Update GitHub profile cards"
-            
-            # Pull latest changes to avoid rejected push
             git pull --rebase
-
             git push
-
           fi
