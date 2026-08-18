@@ -1,47 +1,6 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=F78100&center=true&vCenter=true&multiline=true&width=435&lines=Hi!+I'm+Anirudh+Phophalia+👋;" alt="Typing SVG" />
+  <img src="github-cards.png" alt="Anirudh Phophalia GitHub Stats" width="1000" />
 </p>
-
-<p align="center">
-  <i>💻 Crafting code by day, 🎏 flying kites by breeze, and 🔢 solving math puzzles by night.</i>
-</p>
-
-<p align="center">
-  “Debug your limits, optimize your time, and let your ideas soar like kites.”
-</p>
-
-<p align="center">
-  <img src="https://miro.medium.com/max/1400/1*gReLR6hZjwyBxHmfLN1AVw.gif" width="400" />
-</p>
-
----
-
-## 🧑‍💻 About Me
-
-- 🎓 B.Tech in Computer Science Engineering - Thapar Institute of Engineering & Technology
-- 🎓 B.S. in Data Science - IIT Madras
-- 🤖 AI/ML Enthusiast and Research-Oriented Developer
-- ☁️ Exploring Cloud Computing, MLOps, and Distributed Systems
-- 🔒 Interested in AI Security, Adversarial ML, and Cybersecurity
-- 📍 Jaipur, Rajasthan, India
-
----
-
-### 🎯 What I'm Currently Building
-
-
-- 🤖 **Machine Learning & Deep Learning** – Working with TensorFlow, PyTorch, Scikit-Learn,Transformers, OpenCV, CNNs, RNNs, LSTMs, and real-world datasets
-- 🧠 **AI Research Projects** – Exploring adversarial machine learning, Drone Detection, RF Jamming, USV perception systems, semantic segmentation models and intelligent autonomous systems
-- 📊 **Data Science & Analytics** – Data preprocessing, visualization, feature engineering, statistical analysis, and predictive modeling
-- ☁️ **Cloud Computing & DevOps** – AWS services, Docker, CI/CD pipelines, cloud architecture, deployment automation, and infrastructure management
-- 🔒 **Cybersecurity & AI Security** – Phishing detection, AI safety evaluation, adversarial attacks, and secure AI systems
-- 🧩 **DSA & Competitive Programming** – Solving algorithmic challenges using Python and C++
-- 🎮 **Software Development Projects** – Building full-stack applications and interactive web experiences
-- 📱 **Frontend Development** – Angular, React, Vue.js, TailwindCSS, Bootstrap, responsive UI/UX
-- ⚙️ **Backend Engineering** – Flask, FastAPI, Node.js, NestJS, REST APIs, microservices
-- 📚 **Open Source Contributions** – Contributing to impactful community projects and mentoring newcomers
-
----
 
 ## 🌟 Featured Projects
 
@@ -136,21 +95,6 @@
 
 <h2>🏆 GitHub Trophies</h2>
 <p align="center"> <a href="[https://github.com/ryo-ma/github-profile-trophy](https://github-trophies.vercel.app/?username=AnirudhPhophalia)"><img src="https://github-trophies.vercel.app/?username=AnirudhPhophalia" /></a> </p>
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img height="180em" src="https://bakamitai.vercel.app/api?username=AnirudhPhophalia&show_icons=true&theme=codeSTACKr&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://bakamitai.vercel.app/api/top-langs/?username=AnirudhPhophalia&theme=codeSTACKr&layout=compact&langs_count=8"/>
-</p>
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=AnirudhPhophalia&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF" alt="GitHub Streak" width="48%" />
-</p>
-
-<!-- <p align="center">
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AnirudhPhophalia&theme=2077" alt="Profile Summary" width="48%" >
-</p> -->
-
 
 ## 🏅 Holopin Badges
 
