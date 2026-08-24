@@ -1,3 +1,8 @@
+<div align="center">
+  <a href="https://github.com/AnirudhPhophalia">
+    <img align="center" src="https://github-widgetbox.vercel.app/api/profile?username=AnirudhPhophalia&data=followers,repositories,stars,commits&theme=default" width="1500" />
+  </a>
+</div>
 <p align="center">
   <img src="github-cards.png" alt="Anirudh Phophalia GitHub Stats" width="1000" />
 </p>
